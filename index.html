@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Crud</title>
 </head>
 <body>
-    <h1>MI crud</h1>
+    <main class="contenedorPrincipal">
+        <h1>CRUD  de  Usuarios</h1>
+        <form action="" class="form">
+            <input type="text" placeholder="Name" id="nombre" required>
+            <input type="email" placeholder="Email" id="correo" required>
+            <button id="enviar" class="botonEnviar">Add</button>
+        </form>
+        <section class="contenedorTabla">
+            <ul class="tabla">
+                <li class="tablaHeader">Name</li>
+                <li class="tablaHeader">Email</li>
+                <li class="tablaHeader">Action</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

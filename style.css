@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: white;
+    
+}
+ul{
+    list-style: none;
+}
+.contenedorPrincipal{
+    max-width: 800px;
+    border: 1px solid white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contenedorPrincipal > h1{
+    text-align: center;
+}
+.form{
+    display: flex;
+    gap: 10px;
+    & input{
+        width: 100%;
+        padding: 10px;
+        font-size: 1.1em;
+        border: 2px solid rgb(211, 211, 211);
+        outline: none;
+        border-radius: 4px;
+    }   
+}
+.botonEnviar{
+    width: 150px;
+    font-size: 1.1em;
+}
+.tabla{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    font-size: 1.1em;
+}
+.tabla li{
+    border: 1px solid lightgray;
+    padding: 10px;
+}
+.tablaHeader{
+    font-weight: bolder;
+    background-color: rgb(232, 230, 230);
+    text-align: center;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    
+    & button{
+        width: fit-content;
+        padding: 5px 10px;
+        border: none;
+        font-weight: bolder;
+        border-radius: 6px;
+        cursor: pointer;
+        &:hover{
+            opacity: .7;
+        }
+    }
+    & button:first-child{
+        background-color: rgb(0, 255, 68);
+    }
+    & button:last-child{
+        background-color: red;
+        color: white;
+    }
+}
